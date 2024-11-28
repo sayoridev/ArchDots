@@ -19,4 +19,6 @@ My arch linux i3-gaps dotfiles
 
 **Login Manager**: GDM
 
+**Notify Deamon**: Dunst
+
 **Discord**: BetterDiscord [GitHub Dark](https://betterdiscord.app/theme/GitHub%20Dark)
