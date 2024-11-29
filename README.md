@@ -22,3 +22,5 @@ My arch linux i3-gaps dotfiles
 **Notify Deamon**: Dunst
 
 **Discord**: BetterDiscord [GitHub Dark](https://betterdiscord.app/theme/GitHub%20Dark)
+
+i update the screenshot image later
