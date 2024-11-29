@@ -46,6 +46,10 @@ bindsym $mod1+l exec i3lock -B sigma --clock --ringwrong-color 071823 --insidewr
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-7/launcher.sh
 bindsym $mod+x exec --no-startup-id bash /home/master/.config/rofi/powermenu/type-6/powermenu.sh 
 
+#firefox high presence discord 
+#https://github.com/lolamtisch/Discord-RPC-Extension
+exec --no-startup-id /home/master/server-linux-debug
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
