@@ -1,7 +1,7 @@
 # Arch-Dots
 My arch linux i3-gaps dotfiles
 
-![Alt text](images/arch.png)
+![Alt text](images/desktop.png)
 
 **Distro**: Arch Linux
 
