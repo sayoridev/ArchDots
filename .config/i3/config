@@ -33,6 +33,10 @@ gaps outer 5
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+#redshift
+bindsym $mod1+x exec redshift -x
+bindsym $mod1+c exec redshift -P -O 2500
+
 #picom
 exec --no-startup-id picom
 
