@@ -16,7 +16,7 @@ set $mod1 Mod1
 #screen setup
 set $screen1 eDP-1
 set $screen2 HDMI-1
-#script for adjust monitor
+#script for adjust monitor second monitor 
 #exec --no-startup-id /home/master/screen.sh
 
 # Font system
@@ -268,7 +268,7 @@ exec --no-startup-id /usr/lib/gsd-xsettings
 for_window [class="gnome-calculator"] floating enable
 
 #color border active
-for_window [class=".*"] border pixel 7
+for_window [class=".*"] border pixel 3
 client.focused          #144D32 #144D32 #FFFFFF #144D32
 client.unfocused        #081E14 #081E14 #FFFFFF #081E14
 client.focused_inactive #B70B53 #B70B53 #FFFFFF #B70B53
@@ -318,9 +318,6 @@ client.urgent           #6A329F #6A329F #FFFFFF #6A329F
 
 ################################################################################################################################################################################################################
 
-# Path to volume control, without trailing slash
-set $volumepath ~/i3-volume
-
 # Command for the status line
 #   ie: i3blocks, i3status
 #set $statuscmd i3status
@@ -336,3 +333,27 @@ bindsym XF86AudioLowerVolume exec --no-startup-id $volumepath/volume -n -t $stat
 bindsym XF86AudioMute        exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig mute
 
 
+# Review the lines below and append to ~/.config/i3/config
+
+## Volume control
+
+# Path to volume control, without trailing slash
+set $volumepath ~/i3-volume
+
+# Command for the status line
+#   ie: i3blocks, i3status
+set $statuscmd i3status
+
+# Signal used to update the status line
+#   i3blocks uses SIGRTMIN+10 by default
+#   i3status uses SIGUSR1 by default
+set $statussig SIGUSR1
+
+# Amount to increase/decrease volume as a percentage
+set $volumestep 5
+
+# pulseaudio-utils settings
+#
+# Symbolic name for sink (numeric index not supported)
+#   Recommended: comment out this setting and omit the -s option to use default sink
+#   List sink names: pacmd list-sinks | awk -F "[
